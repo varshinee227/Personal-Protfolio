@@ -1,0 +1,85 @@
+/* General Setup */
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /* Modern dark gradient */
+    background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
+    color: #e2e8f0;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(15, 23, 42, 0.8);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav button {
+    background-color: transparent;
+    color: #94a3b8;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+nav button:hover {
+    color: #f8fafc;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Content Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    display: none; /* Controlled by JS */
+    padding: 60px 20px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Typography Details */
+h1 { font-size: 3rem; margin-bottom: 10px; }
+h2 { color: #3b82f6; margin-bottom: 20px; }
+
+.highlight { color: #3b82f6; }
+.subtitle { font-size: 1.2rem; color: #94a3b8; }
+
+/* Lists & Items */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skills-list li {
+    background: #1e293b;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #334155;
+}
+
+.project-item {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* Smooth Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
